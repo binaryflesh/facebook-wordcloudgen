@@ -1,3 +1,4 @@
+
 import requests
 import json
 
@@ -11,4 +12,4 @@ data = requests.get(_url).text
 data = json.loads(data)
 
 for g in data['data']:
-    print('Name: {} ID: {}'.format(g['name'], g['id']))
+    print ('Name: {} ID: {}'.format(g['name'], g['id']))
